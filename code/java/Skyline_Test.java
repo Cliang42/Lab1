@@ -54,6 +54,7 @@ public class Skyline_Test {
     }
 
     public static void main(String[] args) throws IOException {
+        System.out.println("task finished");
 
         Skyline_test("D:\\lab\\severe lab\\skyline_BB_and_BNL_method\\data\\QWS Date\\qws_normal.txt","Func1","BNL",1000,false,false);
     }

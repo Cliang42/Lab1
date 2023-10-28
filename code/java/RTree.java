@@ -684,6 +684,7 @@ public final class RTree<T> {
         System.out.println("task finished");
 
         pw.println("</div>");
+        System.out.println("task finished");
     }
 
 }
