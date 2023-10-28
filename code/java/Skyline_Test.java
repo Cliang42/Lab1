@@ -45,7 +45,11 @@ public class Skyline_Test {
         System.out.println("result_length: " + skylineResult.size());
         System.out.println("time_used: " + elapsedTime + " nano seconds");
         System.out.println("task finished");
+
         System.out.println("test");
+
+        System.out.println("task finished");
+
 
     }
 
