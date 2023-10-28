@@ -23,11 +23,7 @@ import java.util.Set;
  * @param <T> the type of entry to store in this RTree.
  */
 
-/*
-自加method:
-1. Node 外移为public单独class
-2. getRoot
- */
+
 
 
 public final class RTree<T> {
@@ -681,6 +677,7 @@ public final class RTree<T> {
             visualize(n.children.get(i), pw, (int) (x0 + (i * w / (float) numChildren)),
                     y0 + ELEM_HEIGHT, (int) (w / (float) numChildren), h - ELEM_HEIGHT);
         }
+
         pw.println("</div>");
     }
 

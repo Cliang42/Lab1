@@ -1,29 +1,17 @@
-import org.junit.Test;
-
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.TreeMap;
 
 /**
  * return a list of skyline points
- * assume the query points is at 0,0, ONLY consider 第一象限
+ *
  */
 public class Skyline {
     /**
      * BNL method
-     *         1. p is dominated by a tuple within the window. In this case, p is eliminated and will not be considered
-     *         in future iterations. Of course, p need not be compared to all tuples of the window in this case.
-     *         2. p dominates one or more tuples in the window. In this case, these tuples are eliminated; that is, these
-     *         tuples are removed from the window and will not be considered in future iterations. p is inserted into
-     *         the window.
-     *         3. p is incomparable with all tuples in the window. If there is enough room in the window, p is inserted
-     *         into the window. Otherwise, p is written to a temporary file on disk. The tuples of the temporary file
-     *         will be further processed in the next iteration of the algorithm. When the algorithm starts, the first
-     *         tuple will naturally be put into the window because the window is empty
+     *         1)	窗口中存在一点q，q点支配p点，则p点不可能是SP成员，将p点丢弃。
+     *         2)	p点支配窗口中的一个或多个点，则被p点支配的所有的点不可能是SP成员，将它们删去。
+     *         3)	p点与窗口内所有的点都不相互支配，若窗口的容量仍能够存放p点则插入p点，否则将p点插入临时文件T中.
      *
-     * ！！！in_memory=目前为infinity 因为控制变量，两个实验都用同意memory
-     * 假设in mermory 为 1000
      * @param inputPoints ArrayList<CusPoint>
      * @return res ArrayList<CusPoint>
      * @param loop 控制是否显示运行进程,true=关闭
@@ -158,7 +146,11 @@ public class Skyline {
                     res.add(resPoint);
                 }
             }
+
         }
         return res ;
+
     }
+
+
 }
