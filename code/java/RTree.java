@@ -677,7 +677,7 @@ public final class RTree<T> {
             visualize(n.children.get(i), pw, (int) (x0 + (i * w / (float) numChildren)),
                     y0 + ELEM_HEIGHT, (int) (w / (float) numChildren), h - ELEM_HEIGHT);
         }
-
+        System.out.println("test");
         pw.println("</div>");
     }
 

@@ -146,7 +146,7 @@ public class Skyline {
                     res.add(resPoint);
                 }
             }
-
+            System.out.println("test");
         }
         return res ;
 
