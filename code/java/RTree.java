@@ -678,6 +678,7 @@ public final class RTree<T> {
                     y0 + ELEM_HEIGHT, (int) (w / (float) numChildren), h - ELEM_HEIGHT);
         }
         System.out.println("test");
+        System.out.println("test");
         pw.println("</div>");
     }
 
