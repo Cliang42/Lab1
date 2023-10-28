@@ -148,6 +148,7 @@ public class Skyline {
             }
             System.out.println("test");
         }
+        System.out.println("task finished");
         return res ;
 
     }
